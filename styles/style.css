@@ -547,99 +547,165 @@ section {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 992px) {
-  .header-content .left-header .image {
-    max-width: 100%;
-    border-radius: 50%;
-    height: auto;
-    width: auto;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    background-color: var(--color-white);
-    overflow: hidden;
-    transition: all 0.4s ease-in-out;
-  }
-
-  .header-content .left-header .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.4s ease-in-out;
-  }
-
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .header-content .left-header,
-  .header-content .right-header {
-    width: 100%;
-    padding: 0;
-  }
-
-  .header-content .left-header {
-    margin-bottom: 2rem;
-  }
-
-  .header-content .right-header {
-    padding: 0 2rem;
-  }
-
-  .btn-con {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .main-btn {
-    width: auto;
-    justify-content: center;
-  }
-
-  .controls .control {
-    width: 125px;
-    height: 125px;
-    padding: 3.5rem;
+  @media only screen and (max-width: 992px) {
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem; /* Добавим небольшой отступ */
+    }
+  
+    .header-content .left-header {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+    }
+  
+    .header-content .left-header .image {
+      margin: 0;
+      width: 80%; /* Уменьшаем ширину для лучшего размещения */
+      height: auto;
+      background-color: var(--color-white);
+      overflow: hidden;
+    }
+  
+    .header-content .left-header .image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .header-content .right-header {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .btn-con {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 1rem; /* Добавляем отступы вокруг кнопок */
+    }
+  
+    .main-btn {
+      width: auto;
+      justify-content: center;
+    }
+  
+    .controls .control {
+      width: 100px; /* Уменьшаем размер для мобильных устройств */
+      height: 100px;
+      padding: 2rem;
+    }
+    
+    .controls .control i {
+      font-size: 2rem;
+    }
+    
+    .theme-btn {
+      width: 100px; /* Уменьшаем размер для мобильных устройств */
+      height: 100px;
+    }
+  
+    .theme-btn i {
+      font-size: 2rem;
+    }
+  
+    .contact-content-con {
+      display: flex;
+      flex-direction: column; /* Изменяем направление на колонку */
+      padding-top: 2rem; /* Уменьшаем отступ сверху */
+    }
+  
+    .contact-content-con .left-contact,
+    .contact-content-con .right-contact {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .contact-content-con .left-contact {
+      margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+    }
+  
+    .contact-content-con .left-contact .contact-icon {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .contact-content-con .left-contact .contact-icon a {
+      width: 80px;
+      height: 80px;
+      margin: 0.5rem;
+    }
+  
+    .contact-content-con .right-contact .input-control input,
+    .contact-content-con .right-contact .input-control textarea {
+      padding: 0.8rem 1.1rem;
+      width: calc(100% - 2rem); /* Уменьшаем ширину для учета отступов */
+    }
+  
+    /* Общие стили для мобильных устройств */
+    .btn-con {
+      font-size: 1.5rem; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+  
+    .portfolios {
+      grid-template-columns: 1fr; /* Переводим в один столбец */
+    }
+  
+    .portfolios .portfolio-item {
+      margin-bottom: 2rem; /* Добавляем отступ снизу */
+    }
   }
   
-  .controls .control i {
-    font-size: 3.5rem;
-  }
-  
-  .theme-btn {
-    width: 125px;
-    height: 125px;
-  }
+  /* Основные стили для контейнера "About me" */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px; /* Добавить внутренние отступы */
+}
 
-  .theme-btn i {
-    font-size: 3.8rem;
-  }
+/* Стили для блока "left-about" */
+.left-about {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  .btn-con {
-    padding: 1rem 1rem;
-    font-size: 2.2rem;
-    border-radius: 80px;
-    color: var(--color-white);
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-  }
+.left-about h2 {
+  margin-bottom: 10px;
+}
 
-  .contact-content-con .left-contact .contact-icon {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .contact-content-con .left-contact .contact-icon a {
-    width: 100px;
-    height: 100px;
-    margin: 0.5rem;
-  }
+.left-about h3, .left-about h8, .left-about p {
+  margin: 0 0 10px 0;
+}
+
+/* Стили для блока "about-stats" */
+.about-stats {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.prog-title, .prog-text {
+  margin: 0;
+}
+
+.left-about, .about-stats {
+  width: 100%;
+  text-align: center; /* Центрирование текста */
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 100%; /* Убираем ограничение по максимальной ширине на мобильных устройствах */
+  text-align: left; /* Центрирование текста */
+  font-size: 26px;
+}
 }
 
 @media only screen and (min-width: 601px) {
