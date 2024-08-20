@@ -553,7 +553,7 @@ section {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 1rem; /* Добавим небольшой отступ */
+      padding: 1rem;
     }
   
     .header-content .left-header {
@@ -561,12 +561,12 @@ section {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+      margin-bottom: 1rem;
     }
   
     .header-content .left-header .image {
       margin: 0;
-      width: 80%; /* Уменьшаем ширину для лучшего размещения */
+      width: 80%;
       height: auto;
       background-color: var(--color-white);
       overflow: hidden;
@@ -588,7 +588,7 @@ section {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding: 1rem; /* Добавляем отступы вокруг кнопок */
+      padding: 1rem;
     }
   
     .main-btn {
@@ -597,7 +597,7 @@ section {
     }
   
     .controls .control {
-      width: 100px; /* Уменьшаем размер для мобильных устройств */
+      width: 100px;
       height: 100px;
       padding: 2rem;
     }
@@ -607,7 +607,7 @@ section {
     }
     
     .theme-btn {
-      width: 100px; /* Уменьшаем размер для мобильных устройств */
+      width: 100px;
       height: 100px;
     }
   
@@ -617,8 +617,8 @@ section {
   
     .contact-content-con {
       display: flex;
-      flex-direction: column; /* Изменяем направление на колонку */
-      padding-top: 2rem; /* Уменьшаем отступ сверху */
+      flex-direction: column;
+      padding-top: 2rem;
     }
   
     .contact-content-con .left-contact,
@@ -628,7 +628,7 @@ section {
     }
   
     .contact-content-con .left-contact {
-      margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+      margin-bottom: 1rem;
     }
   
     .contact-content-con .left-contact .contact-icon {
@@ -646,66 +646,62 @@ section {
     .contact-content-con .right-contact .input-control input,
     .contact-content-con .right-contact .input-control textarea {
       padding: 0.8rem 1.1rem;
-      width: calc(100% - 2rem); /* Уменьшаем ширину для учета отступов */
+      width: calc(100% - 2rem);
     }
-  
-    /* Общие стили для мобильных устройств */
+
     .btn-con {
-      font-size: 1.5rem; /* Уменьшаем размер шрифта для мобильных устройств */
+      font-size: 1.5rem;
     }
   
     .portfolios {
-      grid-template-columns: 1fr; /* Переводим в один столбец */
+      grid-template-columns: 1fr;
     }
   
     .portfolios .portfolio-item {
-      margin-bottom: 2rem; /* Добавляем отступ снизу */
+      margin-bottom: 2rem;
     }
   }
-  
-  /* Основные стили для контейнера "About me" */
-.about-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px; /* Добавить внутренние отступы */
-}
 
-/* Стили для блока "left-about" */
-.left-about {
-  width: 100%;
-  margin-bottom: 20px;
-}
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
 
-.left-about h2 {
-  margin-bottom: 10px;
-}
+  .left-about {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-.left-about h3, .left-about h8, .left-about p {
-  margin: 0 0 10px 0;
-}
+  .left-about h2 {
+    margin-bottom: 10px;
+  }
 
-/* Стили для блока "about-stats" */
-.about-stats {
-  width: 100%;
-  margin-bottom: 20px;
-}
+  .left-about h3, .left-about h8, .left-about p {
+    margin: 0 0 10px 0;
+  }
 
-.prog-title, .prog-text {
-  margin: 0;
-}
+  .about-stats {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-.left-about, .about-stats {
-  width: 100%;
-  text-align: center; /* Центрирование текста */
-}
+  .prog-title, .prog-text {
+    margin: 0;
+  }
 
-.progress-bar {
-  width: 100%;
-  max-width: 100%; /* Убираем ограничение по максимальной ширине на мобильных устройствах */
-  text-align: left; /* Центрирование текста */
-  font-size: 26px;
-}
+  .left-about, .about-stats {
+    width: 100%;
+    text-align: center;
+  }
+
+  .progress-bar {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-size: 26px;
+  }
 }
 
 @media only screen and (min-width: 601px) {
